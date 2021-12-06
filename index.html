@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./toDo.css">
+    <title>Today's To-Do List</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="date"></h1>
+
+        <div class="time">
+            <span class="clock-time">12:09</span>
+            <span class="clock-ampm">PM</span>
+        </div>
+
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Add task">
+        <span onclick="newItem()" class="addBtn">Add task</span>
+    </div>
+
+    <ul id="myUL">
+        <li class="item">Wake Up</li>
+        <li class="item">Brush teeth</li>
+        <li class="checked">Cry</li>
+    </ul>
+    
+    <script src="app.js"></script>
+</body>
+</html>

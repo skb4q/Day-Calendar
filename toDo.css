@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    border-radius: 10px
+  }
+
+  /* Margins and padding is removed from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(101, 147, 207);
+    font-size: 18px;
+    transition: 0.2s;
+    
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Sets odd-numbered list items to a different color for easier visibility for selecting */
+  ul li:nth-child(odd) {
+    background: #b7caf5;
+  }
+  
+  /* Darkens color of list item on hover */
+  ul li:hover {
+    background: rgb(13, 43, 124);
+    color: #fff;
+    border-bottom-left-radius: 25px;
+  }
+  
+  /* When clicked on,the text is striked out and background color is changed */
+  ul li.checked {
+    background: rgb(45, 1, 87);
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Adds a check mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* The remove button is styled */
+  .remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .remove:hover {
+    background-color: #e71a4e;
+    color: white;
+  }
+  
+  /* Styles the header */
+  .header {
+    background-color: #1320e2;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  /* Provides space between the input bar and the to-do list */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .time{
+    background: #000552;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .clock-time,
+  .clock-ampm{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #e5e9fd;
+  }
+
+  .clock-time{
+    font-size: 36px;
+  }
+
+  /* Styles the input bar */
+  input {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  /* Styles the 'Add Task' button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #dfdbdb;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .addBtn:hover {
+    background-color: rgb(133, 133, 133);
+    color: rgb(243, 243, 243);
+  }
