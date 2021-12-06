@@ -1,5 +1,5 @@
 # Day-Calendar
-Displays the current date and time, along with a to-do list that the user can add, mark out, and delete tasks with.
+Displays the current date and time, along with a to-do list that the user can add to, mark out, and delete tasks from.
 
 Utilizes HTML, CSS, and JavaScript
 
